@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Amer-Hallaq-Portfolio">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="variables.css">
+    <script src="https://kit.fontawesome.com/d6ea6551ab.js" crossorigin="anonymous"></script>
+    <title>Amer Hallaq</title>
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <nav>
+                <h2 class="logo"><span>A</span> HALLAQ</h2>
+                <ul id="sideMenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-solid fa-arrow-right" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Engineer</p>
+                <h1>Hi, I'm <span>Amer</span><br>Based in Palestine</h1>
+                <a href="assets/AmerHallaq-Resume.pdf" class="btn-download" download>Download My CV</a>
+            </div>
+        </div>
+    </header>
+    <!---- -------------------------------------------------------About-------------------------------------------------------------------->
+    <section id="about">
+        <div class="container">
+            <div class="row row-about">
+                <div class="about-col-1">
+                    <img src="assets/amer-about-photo.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-stitle">About me</h1>
+                    <p>I'm Amer Hallaq from Palestine, a Software Engineer wih two years of experience. I also have +5 years of professional experience in Oman,Kazakhstan, and Palestine
+                        as a Mechatronics Engineer. aside of coding, I'm a soccer player, I also love swimming, squash and travelling.   
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Back End</span><br>Node.js | Express.js | NestJS | TypeScript | Django | Flask | OOP | REST APIs</li>
+                            <li><span>Front End</span><br>JS | HTML | CSS | React.js</li>
+                            <li><span>Databases</span><br>SQL | MongoDB | PostgreSQL</li>
+                            <li><span>Tools</span><br>Git | GitHub | Docker | AWS | Postman</li>
+                            <li><span>Soft Skills</span><br>Teamwork | Communication | Adaptability | Project Management | Agile | Problem-Solving</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>05/2024-Present</span><br>Freelancer Software Engineer</li>
+                            <li><span>02/2024-05/2024</span><br>Backend Engineer at TAP Careers</li>
+                            <li><span>02/2023-02/2024</span><br>Full-Stack Developer at Axsos Academy</li>
+                            <li><span>02/2020-02/2023</span><br>BIM Design Engineer at GHAZELLE</li>
+                            <li><span>08/2015-10/2019</span><br>Instrumentation Engineer at CCC</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024</span><br>Backend Development Specilization at TAP Careers</li>
+                            <li><span>2023</span><br>Full-Stack Development Diploma at Axsos Academy</li>
+                            <li><span>2014</span><br>B.Sc in Mechatronics Engineering with a Minor in CS at Birzeit University</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---- -------------------------------------------------------Services-------------------------------------------------------------------->
+    <section id="services">
+        <div class="container">
+            <h1 class="sub-stitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-sharp-duotone fa-solid fa-play"></i>
+                    <h2>Frontend Development</h2>
+                    <p>Build frontend user interfaces using JS,CSS,HTML and React.js</p>
+                </div>
+                <div>
+                    <i class="fa-sharp-duotone fa-solid fa-server"></i>
+                    <h2>Backend Development</h2>
+                    <p>Design scalable backend systems, build RESTful APIs using Node.js,Python</p>
+                </div>
+                <div>
+                    <i class="fa-sharp-duotone fa-solid fa-cubes"></i>
+                    <h2>BIM Development</h2>
+                    <p>Design Revit plugins for BIM Modeling using Python,C# (Coming Soon...)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!---- -------------------------------------------------------Portfolio-------------------------------------------------------------------->
+    <section id="portfolio">
+        <div class="container">
+            <h1 class="sub-stitle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="assets/project-1.png" alt="project1">
+                    <div class="layer">
+                        <h3>Travel Advisor Web App</h3>
+                        <p>This app helps travellers to choose their ideal destination.</p>
+                        <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/project-2.png" alt="project1">
+                    <div class="layer">
+                        <h3>E-Commerce Platform</h3>
+                        <p>A Backend server built and designed for a complete E-commerce platform.</p>
+                        <a href="https://github.com/SD-0224/backend-final-3.git" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/project-3.jpg" alt="project1">
+                    <div class="layer">
+                        <h3>Task-Management System</h3>
+                        <p>A Personal Task-Management System implemented using NestJS,...In progress</p>
+                        <a href="https://github.com/HallaqAmer/task-management-NestJs-project.git" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+            <!---- -------------------------------------------------------Contact-------------------------------------------------------------------->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> amerhalaq91@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +970598109881</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/amerhallaq/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/HallaqAmer" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" id="message" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn-submit-form">Submit</button>
+                    </form>
+                    <span id="submitMessage" class=""></span>
+                </div>
+            </div>
+        </div>
+        <footer class="copy-right">
+            <p>&#169 2024 Amer Hallaq, All rights reserved.</p>
+        </footer>
+    </section>
+<script src="script.js"></script>
+</body>
+</html>
