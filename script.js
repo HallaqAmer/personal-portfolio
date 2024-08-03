@@ -37,7 +37,7 @@ const msg=document.getElementById("submitMessage")
     .then((response) => {
         msg.innerText="Your message was sent successfully!"
         msg.classList.add('success-msg')
-        setTimeout(()=> msg.innerHTML='',5000)
+        setTimeout(()=> msg.innerHTML='',3000)
         })
         form.reset()
     .catch((error) => {
