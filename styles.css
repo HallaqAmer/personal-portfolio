@@ -373,12 +373,6 @@ nav ul li a:hover::after {
     transform: translateY(-5px);
 }
 
-
-
-.btn:hover {
-    background: var(--brand-secondary);
-}
-
 .contact-right form {
 
     width: 100%;
@@ -388,18 +382,27 @@ form input, form textarea {
     width: 100%;
     border: 0;
     outline: none;
-    background-color: var(--brand-primary-second);
-    color: var(--text-color);
+    background-color: white;
+    border: 1px solid var(--brand-primary-light);
+    color: var(--brand-primary-first);
     padding: 15px;
     margin: 15px 0;
     font-size: 18px;
     border-radius: 6px;
+    transition: background 0.5s;
 
+}
+
+form input:hover, form textarea:hover {
+
+    background-color: #EEF7FF;
 }
 
 form input::placeholder, form textarea::placeholder {
 
-    color: var(--text-color);
+    color: gray;
+    font-style: italic;
+
 }
 
 form .btn-submit-form {
@@ -409,18 +412,18 @@ form .btn-submit-form {
     border: 1px solid var(--brand-primary-light);
     font-size: 18px;
     margin-top: 20px;
-    background-color: var(--brand-primary-second);
+    background-color: #3FA2F6;
     color: var(--text-color);
-    transition: background 0.5s;
+    /* transition: background 0.5s; */
 
 }
 
-form .btn-submit-form:hover {
+/* form .btn-submit-form:hover {
 
     background-color: var(--brand-secondary);
     
 
-}
+} */
 
 #submitMessage {
     width: fit-content;

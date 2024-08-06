@@ -9,6 +9,29 @@
     <script src="https://kit.fontawesome.com/d6ea6551ab.js" crossorigin="anonymous"></script>
     <title>AmerHallaq</title>
     <link rel="icon" href="assets/icon-ah.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/icon-ah.ico" type="image/x-icon">
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "Amer Hallaq",
+          "url": "http://www.amerhallaq.com",
+          "logo": "http://www.amerhallaq.com/assets/icon-ah.ico",
+          "sameAs": [
+            "http://www.linkedin.com/in/amerhallaq"
+          ],
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+970598109881",
+            "contactType": "Amer Hallaq"
+          }
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://www.amerhallaq.com/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        }
+    </script>
 </head>
 <body>
     <header id="header">
@@ -154,10 +177,10 @@
                 </div>
                 <div class="contact-right">
                     <form name="submit-to-google-sheet">
-                        <input type="text" name="name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <textarea name="message" rows="6" id="message" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn-submit-form">Submit</button>
+                        <input type="text" name="name" placeholder="Amer Hallaq" required>
+                        <input type="email" name="email" placeholder="amer@gmail.com" required>
+                        <textarea name="message" rows="6" id="message" placeholder="Hello Amer ..."></textarea>
+                        <button type="submit" class="btn btn-submit-form">Send message</button>
                     </form>
                     <span id="submitMessage" class=""></span>
                 </div>
@@ -168,22 +191,5 @@
         </footer>
     </section>
 <script src="script.js"></script>
-<script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Amer Hallaq",
-      "url": "http://www.amerhallaq.com",
-      "logo": "http://www.amerhallaq.com/assets/icon-ah.ico",
-      "sameAs": [
-        "http://www.linkedin.com/in/amerhallaq"
-      ],
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+970598109881",
-        "contactType": "Amer Hallaq"
-      }
-    }
-    </script>
 </body>
 </html>
