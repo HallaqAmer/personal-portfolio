@@ -129,20 +129,21 @@ nav ul li a:hover::after {
 
 .about-col-1 {
     flex-basis: 35%;
-
+    
 }
 
 .about-col-1 img {
     width: 100%;
-    height: 100%;
+    height: 600px;
     border-radius: 15px;
-    object-fit: cover;
+    object-fit:cover;
     mix-blend-mode:darken;
 }
 
 .about-col-2 {
     flex-basis: 60%;
     width: 100%;
+    
 }
 
 .sub-stitle {
@@ -462,8 +463,43 @@ nav .fas {
 }
 
 /* ------------------responsive design for small screens---------------------------------------------- */
+@media (min-width: 901px) and (max-width: 1200px) {
 
-@media (min-width: 691px) and (max-width: 850px) {
+    .about-col-1 {
+        flex-basis: 45%;
+        
+    }
+
+    .about-col-1 img {
+        height: 550px;
+        
+    }
+
+    .about-col-2 {
+        flex-basis: 50%;
+    }
+
+    .tab-links{
+        margin-right: 25px;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 900px) {
+
+    .about-col-1 {
+        flex-basis: 45%;
+        
+    }
+
+    .about-col-1 img {
+        height: 550px;
+        
+        
+    }
+
+    .about-col-2 {
+        flex-basis: 50%;
+    }
 
 
     nav ul li {
@@ -477,12 +513,12 @@ nav .fas {
     }
 
     .tab-links{
-        margin-right: 30px;
+        margin-right: 15px;
     }
 
 }
 
-@media only screen and (max-width:690px) {
+@media only screen and (max-width:700px) {
 
     .header-text {
         margin-top:100%;
@@ -543,6 +579,11 @@ nav .fas {
 
     .about-col-1 {
         margin-bottom: 30px;
+    }
+
+    .about-col-1 img {
+
+        height: 400px;
     }
 
     .about-col-2 {
