@@ -47,3 +47,46 @@ const msg=document.getElementById("submitMessage")
         form.reset()
       })
   })
+
+  const fetchProjectsData= async () => {
+    console.log("hello projects")
+    const spaceId='5mvly9dk5oqh'
+    const accessToken='043KdxPZeaE-N_WIzwiZ27i0wCkdAx7uvjk0whnGZQw'
+    const url=`https://cdn.contentful.com/spaces/${spaceId}/entries?access_token=${accessToken}`
+
+    try {
+
+        const response= await fetch(url,{
+            method:'GET'
+        })
+
+        const projects= await response.json()
+        const projectsImages={};
+        projects.includes.Asset.forEach((asset)=> {
+            projectsImages[asset.sys.id]=[asset.fields.file.url,asset.fields.fileName]
+        })
+        const projectsdiv=document.getElementById('projects')
+        for(let project of projects.items ) {
+            const imageId=project.fields.projectImage.sys.id
+            const imgaeUrl=projectsImages[imageId][0]
+            const imgaeAlt=projectsImages[imageId][1]
+            projectsdiv.innerHTML+=`
+                <div class="work">
+                    <img src="${imgaeUrl}" alt="${imgaeAlt}">
+                    <div class="layer">
+                        <h3>${project.fields.projectName}</h3>
+                        <p>${project.fields.projectDescription}</p>
+                        <a href="${project.fields.projectLink}" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            `
+        }
+
+    }
+    catch (error) {
+        console.error('Error fetching data:', error);
+    }
+
+  }
+
+fetchProjectsData()
