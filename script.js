@@ -101,5 +101,4 @@ const msg=document.getElementById("submitMessage")
     }
 
   }
-
 fetchProjectsData()
