@@ -1,6 +1,20 @@
 const tabLinks=document.getElementsByClassName("tab-links");
 const tabContents=document.getElementsByClassName("tab-contents")
 
+const navLinks= document.querySelectorAll('.nav-link')
+
+navLinks.forEach((link) => {
+    link.addEventListener('click', function(event) {
+        event.preventDefault();
+        const targetId=this.getAttribute('data-target');
+        const targetElement= document.getElementById(targetId);
+
+        targetElement.scrollIntoView({behavior: 'smooth'})
+        history.pushState(null,'', `/${targetId}`)
+
+    })
+})
+
 const openTab= (tabName) => {
     for(let tabLink of tabLinks) {
         tabLink.classList.remove("active-link")
@@ -49,7 +63,6 @@ const msg=document.getElementById("submitMessage")
   })
 
   const fetchProjectsData= async () => {
-    console.log("hello projects")
     const spaceId='5mvly9dk5oqh'
     const accessToken='043KdxPZeaE-N_WIzwiZ27i0wCkdAx7uvjk0whnGZQw'
     const url=`https://cdn.contentful.com/spaces/${spaceId}/entries?access_token=${accessToken}`
