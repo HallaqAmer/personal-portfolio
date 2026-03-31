@@ -1,0 +1,449 @@
+/* Coming Soon Page Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, var(--brand-primary-light) 0%, var(--brand-primary-third) 100%);
+    color: var(--brand-primary-first);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Main Container */
+.coming-soon-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.content-wrapper {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 30px;
+    padding: 60px 50px;
+    box-shadow: 0 20px 60px rgba(22, 72, 99, 0.15);
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+/* Profile Section */
+.profile-section {
+    margin-bottom: 40px;
+}
+
+.profile-image-wrapper {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto 25px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid var(--brand-secondary);
+    box-shadow: 0 10px 30px rgba(255, 111, 97, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.profile-image-wrapper:hover {
+    transform: scale(1.05);
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 20%;
+    display: block;
+}
+
+.name {
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--brand-primary-first);
+    margin-bottom: 10px;
+    letter-spacing: -0.5px;
+}
+
+.tagline {
+    font-size: 18px;
+    color: var(--brand-primary-second);
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+/* Message Section */
+.message-section {
+    margin: 40px 0;
+    padding: 35px 0;
+    border-top: 2px solid var(--brand-primary-light);
+    border-bottom: 2px solid var(--brand-primary-light);
+}
+
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(135deg, var(--brand-primary-second), var(--brand-primary-third));
+    color: var(--text-color);
+    padding: 12px 28px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(66, 125, 157, 0.3);
+}
+
+.status-badge i {
+    font-size: 16px;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.6;
+    }
+}
+
+.coming-soon-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--brand-primary-first);
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+}
+
+.description {
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--brand-primary-second);
+    margin-bottom: 25px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.timeline {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--brand-primary-light);
+    color: var(--brand-primary-first);
+    padding: 10px 24px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 2px solid var(--brand-primary-third);
+}
+
+.timeline i {
+    color: var(--brand-secondary);
+    font-size: 16px;
+}
+
+/* Contact Section */
+.contact-section {
+    margin-top: 40px;
+}
+
+.contact-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--brand-primary-first);
+    margin-bottom: 25px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.contact-item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    text-decoration: none;
+    color: var(--brand-primary-second);
+    font-size: 16px;
+    padding: 12px 25px;
+    border-radius: 12px;
+    background: var(--brand-primary-light);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.contact-item:hover {
+    background: var(--brand-primary-second);
+    color: var(--text-color);
+    border-color: var(--brand-primary-second);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(66, 125, 157, 0.3);
+}
+
+.contact-item i {
+    font-size: 18px;
+    color: var(--brand-secondary);
+}
+
+.contact-item:hover i {
+    color: var(--text-color);
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: var(--brand-primary-light);
+    color: var(--brand-primary-first);
+    font-size: 24px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 2px solid var(--brand-primary-third);
+}
+
+.social-icon:hover {
+    background: var(--brand-secondary);
+    color: var(--text-color);
+    border-color: var(--brand-secondary);
+    transform: translateY(-5px) rotate(5deg);
+    box-shadow: 0 8px 20px rgba(255, 111, 97, 0.4);
+}
+
+/* Download Button */
+.btn-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 40px;
+    background: linear-gradient(135deg, var(--brand-secondary), #ff8a7d);
+    color: var(--text-color);
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin-top: 25px;
+    box-shadow: 0 6px 20px rgba(255, 111, 97, 0.3);
+}
+
+.btn-download:hover {
+    background: linear-gradient(135deg, #ff8a7d, var(--brand-secondary));
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(255, 111, 97, 0.5);
+}
+
+.btn-download i {
+    font-size: 18px;
+}
+
+/* Footer */
+.footer {
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 2px solid var(--brand-primary-light);
+}
+
+.footer p {
+    font-size: 14px;
+    color: var(--brand-primary-third);
+    font-weight: 400;
+}
+
+/* Responsive Design */
+
+/* Tablets (Portrait) - 768px and below */
+@media only screen and (max-width: 768px) {
+    .content-wrapper {
+        padding: 50px 35px;
+        border-radius: 25px;
+    }
+
+    .profile-image-wrapper {
+        width: 150px;
+        height: 150px;
+    }
+
+    .name {
+        font-size: 36px;
+    }
+
+    .tagline {
+        font-size: 16px;
+    }
+
+    .coming-soon-title {
+        font-size: 30px;
+    }
+
+    .description {
+        font-size: 15px;
+    }
+
+    .contact-title {
+        font-size: 22px;
+    }
+
+    .social-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 22px;
+    }
+}
+
+/* Mobile Devices - 480px and below */
+@media only screen and (max-width: 480px) {
+    body {
+        padding: 15px;
+    }
+
+    .content-wrapper {
+        padding: 40px 25px;
+        border-radius: 20px;
+    }
+
+    .profile-image-wrapper {
+        width: 130px;
+        height: 130px;
+        border-width: 4px;
+    }
+
+    .name {
+        font-size: 28px;
+    }
+
+    .tagline {
+        font-size: 14px;
+    }
+
+    .message-section {
+        margin: 30px 0;
+        padding: 25px 0;
+    }
+
+    .status-badge {
+        padding: 10px 20px;
+        font-size: 12px;
+        gap: 8px;
+    }
+
+    .status-badge i {
+        font-size: 14px;
+    }
+
+    .coming-soon-title {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .description {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .timeline {
+        padding: 8px 18px;
+        font-size: 12px;
+        gap: 8px;
+    }
+
+    .timeline i {
+        font-size: 14px;
+    }
+
+    .contact-title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .contact-item {
+        font-size: 14px;
+        padding: 10px 20px;
+        gap: 10px;
+    }
+
+    .contact-item i {
+        font-size: 16px;
+    }
+
+    .social-links {
+        gap: 15px;
+        margin: 25px 0;
+    }
+
+    .social-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+    }
+
+    .btn-download {
+        padding: 14px 30px;
+        font-size: 14px;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .btn-download i {
+        font-size: 16px;
+    }
+
+    .footer {
+        margin-top: 40px;
+        padding-top: 25px;
+    }
+
+    .footer p {
+        font-size: 12px;
+    }
+}
+
+/* Small Mobile Devices - 360px and below */
+@media only screen and (max-width: 360px) {
+    .content-wrapper {
+        padding: 30px 20px;
+    }
+
+    .profile-image-wrapper {
+        width: 110px;
+        height: 110px;
+    }
+
+    .name {
+        font-size: 24px;
+    }
+
+    .coming-soon-title {
+        font-size: 22px;
+    }
+
+    .contact-info {
+        gap: 12px;
+    }
+
+    .contact-item {
+        flex-direction: column;
+        gap: 8px;
+        padding: 12px 15px;
+    }
+}
